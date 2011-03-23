@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43A74F511339ED5800B7DB26 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A74F501339ED5800B7DB26 /* UIKit.framework */; };
+		43A74F531339ED5800B7DB26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A74F521339ED5800B7DB26 /* Foundation.framework */; };
+		43A74F551339ED5800B7DB26 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A74F541339ED5800B7DB26 /* CoreGraphics.framework */; };
+		43A74F5B1339ED5800B7DB26 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43A74F591339ED5800B7DB26 /* InfoPlist.strings */; };
+		43A74F5E1339ED5800B7DB26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A74F5D1339ED5800B7DB26 /* main.m */; };
+		43A74F611339ED5800B7DB26 /* FileBrowserAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A74F601339ED5800B7DB26 /* FileBrowserAppDelegate.m */; };
+		43A74F641339ED5800B7DB26 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43A74F621339ED5800B7DB26 /* MainWindow.xib */; };
+		43A74F671339ED5800B7DB26 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A74F661339ED5800B7DB26 /* RootViewController.m */; };
+		43A74F6A1339ED5900B7DB26 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43A74F681339ED5900B7DB26 /* RootViewController.xib */; };
+		43A74F711339ED5900B7DB26 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A74F501339ED5800B7DB26 /* UIKit.framework */; };
+		43A74F721339ED5900B7DB26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A74F521339ED5800B7DB26 /* Foundation.framework */; };
+		43A74F731339ED5900B7DB26 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A74F541339ED5800B7DB26 /* CoreGraphics.framework */; };
+		43A74F7B1339ED5900B7DB26 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43A74F791339ED5900B7DB26 /* InfoPlist.strings */; };
+		43A74F7E1339ED5900B7DB26 /* FileBrowserTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 43A74F7D1339ED5900B7DB26 /* FileBrowserTests.h */; };
+		43A74F801339ED5900B7DB26 /* FileBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A74F7F1339ED5900B7DB26 /* FileBrowserTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43A74F741339ED5900B7DB26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43A74F431339ED5800B7DB26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43A74F4B1339ED5800B7DB26;
+			remoteInfo = FileBrowser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		43A74F4C1339ED5800B7DB26 /* FileBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43A74F501339ED5800B7DB26 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		43A74F521339ED5800B7DB26 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		43A74F541339ED5800B7DB26 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		43A74F581339ED5800B7DB26 /* FileBrowser-Info.plist */ = {isa = PBXFileReference; path = "FileBrowser-Info.plist"; sourceTree = "<group>"; };
+		43A74F5A1339ED5800B7DB26 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		43A74F5C1339ED5800B7DB26 /* FileBrowser-Prefix.pch */ = {isa = PBXFileReference; path = "FileBrowser-Prefix.pch"; sourceTree = "<group>"; };
+		43A74F5D1339ED5800B7DB26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		43A74F5F1339ED5800B7DB26 /* FileBrowserAppDelegate.h */ = {isa = PBXFileReference; path = FileBrowserAppDelegate.h; sourceTree = "<group>"; };
+		43A74F601339ED5800B7DB26 /* FileBrowserAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileBrowserAppDelegate.m; sourceTree = "<group>"; };
+		43A74F631339ED5800B7DB26 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		43A74F651339ED5800B7DB26 /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		43A74F661339ED5800B7DB26 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		43A74F691339ED5900B7DB26 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		43A74F701339ED5900B7DB26 /* FileBrowserTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FileBrowserTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43A74F781339ED5900B7DB26 /* FileBrowserTests-Info.plist */ = {isa = PBXFileReference; path = "FileBrowserTests-Info.plist"; sourceTree = "<group>"; };
+		43A74F7A1339ED5900B7DB26 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		43A74F7C1339ED5900B7DB26 /* FileBrowserTests-Prefix.pch */ = {isa = PBXFileReference; path = "FileBrowserTests-Prefix.pch"; sourceTree = "<group>"; };
+		43A74F7D1339ED5900B7DB26 /* FileBrowserTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileBrowserTests.h; sourceTree = "<group>"; };
+		43A74F7F1339ED5900B7DB26 /* FileBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileBrowserTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43A74F491339ED5800B7DB26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A74F511339ED5800B7DB26 /* UIKit.framework in Frameworks */,
+				43A74F531339ED5800B7DB26 /* Foundation.framework in Frameworks */,
+				43A74F551339ED5800B7DB26 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43A74F6C1339ED5900B7DB26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A74F711339ED5900B7DB26 /* UIKit.framework in Frameworks */,
+				43A74F721339ED5900B7DB26 /* Foundation.framework in Frameworks */,
+				43A74F731339ED5900B7DB26 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43A74F411339ED5800B7DB26 = {
+			isa = PBXGroup;
+			children = (
+				43A74F561339ED5800B7DB26 /* FileBrowser */,
+				43A74F761339ED5900B7DB26 /* FileBrowserTests */,
+				43A74F4F1339ED5800B7DB26 /* Frameworks */,
+				43A74F4D1339ED5800B7DB26 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43A74F4D1339ED5800B7DB26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43A74F4C1339ED5800B7DB26 /* FileBrowser.app */,
+				43A74F701339ED5900B7DB26 /* FileBrowserTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43A74F4F1339ED5800B7DB26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43A74F501339ED5800B7DB26 /* UIKit.framework */,
+				43A74F521339ED5800B7DB26 /* Foundation.framework */,
+				43A74F541339ED5800B7DB26 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43A74F561339ED5800B7DB26 /* FileBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				43A74F5F1339ED5800B7DB26 /* FileBrowserAppDelegate.h */,
+				43A74F601339ED5800B7DB26 /* FileBrowserAppDelegate.m */,
+				43A74F621339ED5800B7DB26 /* MainWindow.xib */,
+				43A74F651339ED5800B7DB26 /* RootViewController.h */,
+				43A74F661339ED5800B7DB26 /* RootViewController.m */,
+				43A74F681339ED5900B7DB26 /* RootViewController.xib */,
+				43A74F571339ED5800B7DB26 /* Supporting Files */,
+			);
+			path = FileBrowser;
+			sourceTree = "<group>";
+		};
+		43A74F571339ED5800B7DB26 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43A74F581339ED5800B7DB26 /* FileBrowser-Info.plist */,
+				43A74F591339ED5800B7DB26 /* InfoPlist.strings */,
+				43A74F5C1339ED5800B7DB26 /* FileBrowser-Prefix.pch */,
+				43A74F5D1339ED5800B7DB26 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43A74F761339ED5900B7DB26 /* FileBrowserTests */ = {
+			isa = PBXGroup;
+			children = (
+				43A74F7D1339ED5900B7DB26 /* FileBrowserTests.h */,
+				43A74F7F1339ED5900B7DB26 /* FileBrowserTests.m */,
+				43A74F771339ED5900B7DB26 /* Supporting Files */,
+			);
+			path = FileBrowserTests;
+			sourceTree = "<group>";
+		};
+		43A74F771339ED5900B7DB26 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43A74F781339ED5900B7DB26 /* FileBrowserTests-Info.plist */,
+				43A74F791339ED5900B7DB26 /* InfoPlist.strings */,
+				43A74F7C1339ED5900B7DB26 /* FileBrowserTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43A74F4B1339ED5800B7DB26 /* FileBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43A74F831339ED5900B7DB26 /* Build configuration list for PBXNativeTarget "FileBrowser" */;
+			buildPhases = (
+				43A74F481339ED5800B7DB26 /* Sources */,
+				43A74F491339ED5800B7DB26 /* Frameworks */,
+				43A74F4A1339ED5800B7DB26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FileBrowser;
+			productName = FileBrowser;
+			productReference = 43A74F4C1339ED5800B7DB26 /* FileBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43A74F6F1339ED5900B7DB26 /* FileBrowserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43A74F861339ED5900B7DB26 /* Build configuration list for PBXNativeTarget "FileBrowserTests" */;
+			buildPhases = (
+				43A74F6B1339ED5900B7DB26 /* Sources */,
+				43A74F6C1339ED5900B7DB26 /* Frameworks */,
+				43A74F6D1339ED5900B7DB26 /* Resources */,
+				43A74F6E1339ED5900B7DB26 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43A74F751339ED5900B7DB26 /* PBXTargetDependency */,
+			);
+			name = FileBrowserTests;
+			productName = FileBrowserTests;
+			productReference = 43A74F701339ED5900B7DB26 /* FileBrowserTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43A74F431339ED5800B7DB26 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 43A74F461339ED5800B7DB26 /* Build configuration list for PBXProject "FileBrowser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 43A74F411339ED5800B7DB26;
+			productRefGroup = 43A74F4D1339ED5800B7DB26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43A74F4B1339ED5800B7DB26 /* FileBrowser */,
+				43A74F6F1339ED5900B7DB26 /* FileBrowserTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43A74F4A1339ED5800B7DB26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A74F5B1339ED5800B7DB26 /* InfoPlist.strings in Resources */,
+				43A74F641339ED5800B7DB26 /* MainWindow.xib in Resources */,
+				43A74F6A1339ED5900B7DB26 /* RootViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43A74F6D1339ED5900B7DB26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A74F7B1339ED5900B7DB26 /* InfoPlist.strings in Resources */,
+				43A74F7E1339ED5900B7DB26 /* FileBrowserTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43A74F6E1339ED5900B7DB26 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43A74F481339ED5800B7DB26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A74F5E1339ED5800B7DB26 /* main.m in Sources */,
+				43A74F611339ED5800B7DB26 /* FileBrowserAppDelegate.m in Sources */,
+				43A74F671339ED5800B7DB26 /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43A74F6B1339ED5900B7DB26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A74F801339ED5900B7DB26 /* FileBrowserTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43A74F751339ED5900B7DB26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43A74F4B1339ED5800B7DB26 /* FileBrowser */;
+			targetProxy = 43A74F741339ED5900B7DB26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		43A74F591339ED5800B7DB26 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43A74F5A1339ED5800B7DB26 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		43A74F621339ED5800B7DB26 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43A74F631339ED5800B7DB26 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		43A74F681339ED5900B7DB26 /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43A74F691339ED5900B7DB26 /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+		43A74F791339ED5900B7DB26 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43A74F7A1339ED5900B7DB26 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43A74F811339ED5900B7DB26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		43A74F821339ED5900B7DB26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		43A74F841339ED5900B7DB26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FileBrowser/FileBrowser-Prefix.pch";
+				INFOPLIST_FILE = "FileBrowser/FileBrowser-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		43A74F851339ED5900B7DB26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FileBrowser/FileBrowser-Prefix.pch";
+				INFOPLIST_FILE = "FileBrowser/FileBrowser-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		43A74F871339ED5900B7DB26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FileBrowser.app/FileBrowser";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FileBrowserTests/FileBrowserTests-Prefix.pch";
+				INFOPLIST_FILE = "FileBrowserTests/FileBrowserTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		43A74F881339ED5900B7DB26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FileBrowser.app/FileBrowser";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FileBrowserTests/FileBrowserTests-Prefix.pch";
+				INFOPLIST_FILE = "FileBrowserTests/FileBrowserTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43A74F461339ED5800B7DB26 /* Build configuration list for PBXProject "FileBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43A74F811339ED5900B7DB26 /* Debug */,
+				43A74F821339ED5900B7DB26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43A74F831339ED5900B7DB26 /* Build configuration list for PBXNativeTarget "FileBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43A74F841339ED5900B7DB26 /* Debug */,
+				43A74F851339ED5900B7DB26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		43A74F861339ED5900B7DB26 /* Build configuration list for PBXNativeTarget "FileBrowserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43A74F871339ED5900B7DB26 /* Debug */,
+				43A74F881339ED5900B7DB26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43A74F431339ED5800B7DB26 /* Project object */;
+}
