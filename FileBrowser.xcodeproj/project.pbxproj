@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43189B551340755700F933B1 /* folder.png in Resources */ = {isa = PBXBuildFile; fileRef = 43189B541340755700F933B1 /* folder.png */; };
+		43189B5913407DAF00F933B1 /* Brouser.m in Sources */ = {isa = PBXBuildFile; fileRef = 43189B5813407DAF00F933B1 /* Brouser.m */; };
 		43A74F511339ED5800B7DB26 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A74F501339ED5800B7DB26 /* UIKit.framework */; };
 		43A74F531339ED5800B7DB26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A74F521339ED5800B7DB26 /* Foundation.framework */; };
 		43A74F551339ED5800B7DB26 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A74F541339ED5800B7DB26 /* CoreGraphics.framework */; };
@@ -35,24 +37,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		43189B541340755700F933B1 /* folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = folder.png; sourceTree = "<group>"; };
+		43189B5713407DAF00F933B1 /* Brouser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Brouser.h; sourceTree = "<group>"; };
+		43189B5813407DAF00F933B1 /* Brouser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Brouser.m; sourceTree = "<group>"; };
 		43A74F4C1339ED5800B7DB26 /* FileBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43A74F501339ED5800B7DB26 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		43A74F521339ED5800B7DB26 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		43A74F541339ED5800B7DB26 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		43A74F581339ED5800B7DB26 /* FileBrowser-Info.plist */ = {isa = PBXFileReference; path = "FileBrowser-Info.plist"; sourceTree = "<group>"; };
+		43A74F581339ED5800B7DB26 /* FileBrowser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FileBrowser-Info.plist"; sourceTree = "<group>"; };
 		43A74F5A1339ED5800B7DB26 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		43A74F5C1339ED5800B7DB26 /* FileBrowser-Prefix.pch */ = {isa = PBXFileReference; path = "FileBrowser-Prefix.pch"; sourceTree = "<group>"; };
+		43A74F5C1339ED5800B7DB26 /* FileBrowser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FileBrowser-Prefix.pch"; sourceTree = "<group>"; };
 		43A74F5D1339ED5800B7DB26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		43A74F5F1339ED5800B7DB26 /* FileBrowserAppDelegate.h */ = {isa = PBXFileReference; path = FileBrowserAppDelegate.h; sourceTree = "<group>"; };
+		43A74F5F1339ED5800B7DB26 /* FileBrowserAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileBrowserAppDelegate.h; sourceTree = "<group>"; };
 		43A74F601339ED5800B7DB26 /* FileBrowserAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileBrowserAppDelegate.m; sourceTree = "<group>"; };
 		43A74F631339ED5800B7DB26 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		43A74F651339ED5800B7DB26 /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		43A74F651339ED5800B7DB26 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		43A74F661339ED5800B7DB26 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		43A74F691339ED5900B7DB26 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
 		43A74F701339ED5900B7DB26 /* FileBrowserTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FileBrowserTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		43A74F781339ED5900B7DB26 /* FileBrowserTests-Info.plist */ = {isa = PBXFileReference; path = "FileBrowserTests-Info.plist"; sourceTree = "<group>"; };
+		43A74F781339ED5900B7DB26 /* FileBrowserTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FileBrowserTests-Info.plist"; sourceTree = "<group>"; };
 		43A74F7A1339ED5900B7DB26 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		43A74F7C1339ED5900B7DB26 /* FileBrowserTests-Prefix.pch */ = {isa = PBXFileReference; path = "FileBrowserTests-Prefix.pch"; sourceTree = "<group>"; };
+		43A74F7C1339ED5900B7DB26 /* FileBrowserTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FileBrowserTests-Prefix.pch"; sourceTree = "<group>"; };
 		43A74F7D1339ED5900B7DB26 /* FileBrowserTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileBrowserTests.h; sourceTree = "<group>"; };
 		43A74F7F1339ED5900B7DB26 /* FileBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileBrowserTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,7 +124,10 @@
 				43A74F651339ED5800B7DB26 /* RootViewController.h */,
 				43A74F661339ED5800B7DB26 /* RootViewController.m */,
 				43A74F681339ED5900B7DB26 /* RootViewController.xib */,
+				43189B541340755700F933B1 /* folder.png */,
 				43A74F571339ED5800B7DB26 /* Supporting Files */,
+				43189B5713407DAF00F933B1 /* Brouser.h */,
+				43189B5813407DAF00F933B1 /* Brouser.m */,
 			);
 			path = FileBrowser;
 			sourceTree = "<group>";
@@ -225,6 +233,7 @@
 				43A74F5B1339ED5800B7DB26 /* InfoPlist.strings in Resources */,
 				43A74F641339ED5800B7DB26 /* MainWindow.xib in Resources */,
 				43A74F6A1339ED5900B7DB26 /* RootViewController.xib in Resources */,
+				43189B551340755700F933B1 /* folder.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +272,7 @@
 				43A74F5E1339ED5800B7DB26 /* main.m in Sources */,
 				43A74F611339ED5800B7DB26 /* FileBrowserAppDelegate.m in Sources */,
 				43A74F671339ED5800B7DB26 /* RootViewController.m in Sources */,
+				43189B5913407DAF00F933B1 /* Brouser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +453,7 @@
 				43A74F851339ED5900B7DB26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		43A74F861339ED5900B7DB26 /* Build configuration list for PBXNativeTarget "FileBrowserTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +462,7 @@
 				43A74F881339ED5900B7DB26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

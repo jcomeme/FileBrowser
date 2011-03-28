@@ -13,6 +13,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationItem.title = @"Root";
+    mArray = [[NSMutableArray alloc] initWithCapacity:1];
+    [mArray addObject:@"Netfolder1"];
+    [mArray addObject:@"Netfolder2"];
+    
+        
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -51,7 +57,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    return 2;
 }
 
 // Customize the appearance of table view cells.
@@ -65,6 +71,9 @@
     }
 
     // Configure the cell.
+    
+    cell.textLabel.text = [mArray objectAtIndex:indexPath.row];
+    cell.imageView.image = [UIImage imageNamed:@"folder.png"];
     return cell;
 }
 
@@ -118,6 +127,17 @@
     [self.navigationController pushViewController:detailViewController animated:YES];
     [detailViewController release];
 	*/
+    if (indexPath.row){
+        Brouser *defaultBrouser = [[Brouser alloc] initWithStyle:UITableViewStylePlain andPath:@"users/"];
+        [self.navigationController pushViewController:defaultBrouser animated:YES];
+        [defaultBrouser release];
+    }else{
+        Brouser *defaultBrouser = [[Brouser alloc] initWithStyle:UITableViewStylePlain andPath:@"users-1/"];
+        [self.navigationController pushViewController:defaultBrouser animated:YES];
+        [defaultBrouser release];
+    }
+    
+    
 }
 
 - (void)didReceiveMemoryWarning

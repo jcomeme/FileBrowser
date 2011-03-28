@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Brouser.h"
 
-@interface RootViewController : UITableViewController {
-
+@interface RootViewController : UITableViewController  <UIAlertViewDelegate, UITextFieldDelegate>{
+    NSMutableArray *mArray;
 }
 
 
