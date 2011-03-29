@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FileView.h"
 
 
 @interface Brouser : UITableViewController {

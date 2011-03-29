@@ -56,7 +56,7 @@
     pool = [[NSAutoreleasePool alloc] init];
 	
 	NSLog(@"direc is %@",directoryPath);
-	NSURL *url = [NSURL URLWithString:@"http://192.168.100.209/cgi-bin/46.cgi"];
+	NSURL *url = [NSURL URLWithString:@"http://192.168.100.209/cgi-bin/fileBrouser/readPath.cgi"];
 	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:15];
     [request setHTTPMethod:@"POST"];
     NSString *dataString = [NSString stringWithFormat:@"selected=%@",directoryPath];
@@ -227,8 +227,35 @@
         [nextBrouser release];
         
     }else{
+        [mStr appendString:[dirArray objectAtIndex:0]];
+        NSString *gString = [NSString stringWithString:[mStr stringByReplacingOccurrencesOfString:@"\n" withString:@""]];
+        
         //[mStr appendString:[mArray objectAtIndex:indexPath.row]];
         //[mStr appendString:@"/"];
+        /* file was selected */
+        
+        NSURL *url = [NSURL URLWithString:@"http://192.168.100.209/cgi-bin/fileBrouser/readPath.cgi"];
+        NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:15];
+        [request setHTTPMethod:@"POST"];
+        NSString *dataString = [NSString stringWithFormat:@"selected=%@",gString];
+        [request setHTTPBody:[dataString dataUsingEncoding:NSUTF8StringEncoding]];
+        
+        NSURLResponse* response;
+        NSError* error = nil;
+        NSData* result = [NSURLConnection sendSynchronousRequest:request
+                                               returningResponse:&response
+                                                           error:&error];	//リクエストを送信して結果を受信
+        if(error)NSLog(@"error = %@", error);
+        
+        NSString *returnedString = [[NSString alloc ]initWithData:result encoding:NSUTF8StringEncoding];
+        NSLog(@"ret %@",returnedString);
+
+        
+        
+        FileView *fView = [[FileView alloc] initWithURL:[NSString stringWithFormat:@"%@",returnedString]];
+        [self.navigationController pushViewController:fView animated:YES];
+        [fView release];
+        
     }
     [mStr release];
     

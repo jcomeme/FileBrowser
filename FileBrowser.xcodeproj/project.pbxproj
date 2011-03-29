@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		43189B551340755700F933B1 /* folder.png in Resources */ = {isa = PBXBuildFile; fileRef = 43189B541340755700F933B1 /* folder.png */; };
 		43189B5913407DAF00F933B1 /* Brouser.m in Sources */ = {isa = PBXBuildFile; fileRef = 43189B5813407DAF00F933B1 /* Brouser.m */; };
+		439CB9FE134198CF00E1FF38 /* FileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 439CB9FC134198CF00E1FF38 /* FileView.m */; };
+		439CB9FF134198CF00E1FF38 /* FileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 439CB9FD134198CF00E1FF38 /* FileView.xib */; };
 		43A74F511339ED5800B7DB26 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A74F501339ED5800B7DB26 /* UIKit.framework */; };
 		43A74F531339ED5800B7DB26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A74F521339ED5800B7DB26 /* Foundation.framework */; };
 		43A74F551339ED5800B7DB26 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A74F541339ED5800B7DB26 /* CoreGraphics.framework */; };
@@ -40,6 +42,9 @@
 		43189B541340755700F933B1 /* folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = folder.png; sourceTree = "<group>"; };
 		43189B5713407DAF00F933B1 /* Brouser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Brouser.h; sourceTree = "<group>"; };
 		43189B5813407DAF00F933B1 /* Brouser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Brouser.m; sourceTree = "<group>"; };
+		439CB9FB134198CF00E1FF38 /* FileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileView.h; sourceTree = "<group>"; };
+		439CB9FC134198CF00E1FF38 /* FileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileView.m; sourceTree = "<group>"; };
+		439CB9FD134198CF00E1FF38 /* FileView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FileView.xib; sourceTree = "<group>"; };
 		43A74F4C1339ED5800B7DB26 /* FileBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43A74F501339ED5800B7DB26 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		43A74F521339ED5800B7DB26 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -86,6 +91,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		439CB9F8134196B300E1FF38 /* Brouse */ = {
+			isa = PBXGroup;
+			children = (
+				43189B5713407DAF00F933B1 /* Brouser.h */,
+				43189B5813407DAF00F933B1 /* Brouser.m */,
+			);
+			name = Brouse;
+			sourceTree = "<group>";
+		};
+		439CB9FA134196D100E1FF38 /* fileOpen */ = {
+			isa = PBXGroup;
+			children = (
+				439CB9FB134198CF00E1FF38 /* FileView.h */,
+				439CB9FC134198CF00E1FF38 /* FileView.m */,
+				439CB9FD134198CF00E1FF38 /* FileView.xib */,
+			);
+			name = fileOpen;
+			sourceTree = "<group>";
+		};
 		43A74F411339ED5800B7DB26 = {
 			isa = PBXGroup;
 			children = (
@@ -126,8 +150,8 @@
 				43A74F681339ED5900B7DB26 /* RootViewController.xib */,
 				43189B541340755700F933B1 /* folder.png */,
 				43A74F571339ED5800B7DB26 /* Supporting Files */,
-				43189B5713407DAF00F933B1 /* Brouser.h */,
-				43189B5813407DAF00F933B1 /* Brouser.m */,
+				439CB9FA134196D100E1FF38 /* fileOpen */,
+				439CB9F8134196B300E1FF38 /* Brouse */,
 			);
 			path = FileBrowser;
 			sourceTree = "<group>";
@@ -234,6 +258,7 @@
 				43A74F641339ED5800B7DB26 /* MainWindow.xib in Resources */,
 				43A74F6A1339ED5900B7DB26 /* RootViewController.xib in Resources */,
 				43189B551340755700F933B1 /* folder.png in Resources */,
+				439CB9FF134198CF00E1FF38 /* FileView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +298,7 @@
 				43A74F611339ED5800B7DB26 /* FileBrowserAppDelegate.m in Sources */,
 				43A74F671339ED5800B7DB26 /* RootViewController.m in Sources */,
 				43189B5913407DAF00F933B1 /* Brouser.m in Sources */,
+				439CB9FE134198CF00E1FF38 /* FileView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
