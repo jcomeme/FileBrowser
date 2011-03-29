@@ -250,12 +250,13 @@
         NSString *returnedString = [[NSString alloc ]initWithData:result encoding:NSUTF8StringEncoding];
         NSLog(@"ret %@",returnedString);
 
-        
-        
+        NSString *urlString = [NSString stringWithString:[returnedString stringByReplacingOccurrencesOfString:@"\n" withString:@""]];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString]];
+        /*
         FileView *fView = [[FileView alloc] initWithURL:[NSString stringWithFormat:@"%@",returnedString]];
         [self.navigationController pushViewController:fView animated:YES];
         [fView release];
-        
+        */
     }
     [mStr release];
     

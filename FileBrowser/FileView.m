@@ -23,7 +23,7 @@
 -(id)initWithURL:(NSString*)url{
     self = [super init];
     if(self){
-        urlString = [NSString stringWithString:url];
+        urlString = [NSString stringWithString:[url stringByReplacingOccurrencesOfString:@"\n" withString:@""]];
     }
     return self;
 }
@@ -31,6 +31,8 @@
 
 - (void)dealloc
 {
+    webView.delegate = nil;
+    [webView release];
     [super dealloc];
 }
 
@@ -48,6 +50,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString]];
+    // open in safari!
+    
     webView = [[UIWebView alloc] initWithFrame:[self.view frame]];
 	[webView setDelegate:self];
     [scroller setContentSize:CGSizeMake(768, 1024)];
@@ -62,6 +68,7 @@
 - (UIViewController*)documentInteractionControllerViewControllerForPreview:(UIDocumentInteractionController*)controller {
     return self; // プレビュー用に用いるビューコントローラ
 }
+
 - (void)documentInteractionControllerDidEndPreview:(UIDocumentInteractionController *)controller {
     [controller autorelease];
 }
